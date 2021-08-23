@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import InputDesButton from "./components/InputDesButton";
+import ImageText from "./components/ImageText";
+import BoxesWithText from "./components/BoxesWithText";
 
 function App() {
   return (
@@ -50,6 +52,35 @@ function App() {
           </li>
 
           <InputDesButton />
+          <section className="mt-20 container mx-auto">
+            <h3 className="text-center font-bold">
+              Discover Our Featured Listings
+            </h3>
+            <p className="text-center mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div className=" border-gray-200 grid grid-cols-4 px-2 py-4 gap-3 mt-10">
+              <ImageText />
+              <ImageText />
+              <ImageText />
+              <ImageText />
+            </div>
+
+            <section className="bg-gray-300 w-screen h-96">
+              <h3 className="text-center font-bold py-4">why choose us</h3>
+              <p className="text-center ">
+                We provide full service at every step
+              </p>
+
+              <div className="grid grid-cols-4 p-2 gap-2 container mx-auto">
+                <BoxesWithText />
+                <BoxesWithText />
+                <BoxesWithText />
+                <BoxesWithText />
+              </div>
+            </section>
+          </section>
         </div>
       </div>
     </div>
