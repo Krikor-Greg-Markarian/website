@@ -8,6 +8,7 @@ import BoxesTogether from "./components/BoxesTogether";
 import BkImgBut from "./components/BkImgBut";
 import ImageWBoxName from "./components/ImageWBoxName";
 import BoxBkTextButton from "./components/BoxBkTextButton";
+import Footer from "./components/Footer";
 
 function App(props) {
   return (
@@ -15,19 +16,34 @@ function App(props) {
       <div className={"house-image"}>
         <p className="text-white font-bold p-2">Houzing</p>
         <li className="list-none float-right ">
-          <a className="text-white font-bold p-3" href="">
+          <a
+            className="text-white font-bold p-3 hover:bg-black rounded-full transition duration-500 ease-in-out"
+            href=""
+          >
             HOME
           </a>
-          <a className="text-white font-bold p-3" href="">
+          <a
+            className="text-white font-bold p-3 hover:bg-black rounded-full transition duration-500 ease-in-out"
+            href=""
+          >
             LISTING
           </a>
-          <a className="text-white font-bold p-3" href="">
+          <a
+            className="text-white font-bold p-3 hover:bg-black rounded-full transition duration-500 ease-in-out"
+            href=""
+          >
             PROPERTY
           </a>
-          <a className="text-white font-bold p-3" href="">
+          <a
+            className="text-white font-bold p-3 hover:bg-black rounded-full transition duration-500 ease-in-out"
+            href=""
+          >
             PAGES
           </a>
-          <a className="text-white font-bold p-3" href="">
+          <a
+            className="text-white font-bold p-3 hover:bg-black rounded-full transition duration-500 ease-in-out"
+            href=""
+          >
             CONTACT
           </a>
           <a className="text-white font-bold p-3" href="">
@@ -218,6 +234,7 @@ function App(props) {
             </section>
           </section>
         </div>
+        <Footer />
       </div>
     </div>
   );
