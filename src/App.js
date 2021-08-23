@@ -6,6 +6,8 @@ import ImageText from "./components/ImageText";
 import BoxesWithText from "./components/BoxesWithText";
 import BoxesTogether from "./components/BoxesTogether";
 import BkImgBut from "./components/BkImgBut";
+import ImageWBoxName from "./components/ImageWBoxName";
+import BoxBkTextButton from "./components/BoxBkTextButton";
 
 function App(props) {
   return (
@@ -154,8 +156,66 @@ function App(props) {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
 
-              <div className="grid grid-cols-4 gap-3 mt-36"></div>
+              <div className="grid grid-cols-4 gap-3 mt-36">
+                <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
+                  1
+                </div>
+                <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
+                  2
+                </div>
+                <div className="w-60 h-60 bg-blue-600 flex justify-center items-center row-span-2 mt-3">
+                  3
+                </div>
+                <div className="w-32 h-32 bg-blue-600 flex justify-center items-center ml-24">
+                  4
+                </div>
+                <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
+                  5
+                </div>
+                <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
+                  6
+                </div>
+
+                <div className="w-32 h-32 bg-blue-600 flex justify-center items-center ml-24">
+                  7
+                </div>
+              </div>
             </div>
+
+            <section className="mt-20">
+              <h3 className="text-center font-bold">Meet Our Agents</h3>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div className=" border-gray-200 grid grid-cols-5 px-2 py-4 gap-3 mt-10 container mx-auto">
+                <ImageWBoxName name="Robert Fox" position="Lead Designer" />
+                <ImageWBoxName name="Floyd CEO" position="Director" />
+                <ImageWBoxName name="Albert Flores" position="Marketer" />
+                <ImageWBoxName
+                  name="Darlene Robertson"
+                  position="Project Manager"
+                />
+                <ImageWBoxName
+                  name="Savanash Nguyen"
+                  position="Leader Developer"
+                />
+              </div>
+            </section>
+
+            <section className="bg-gray-100 w-screen h-screen">
+              <h3 className="text-center font-bold py-4">From Our Blog</h3>
+              <p className="text-center ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div className="grid grid-cols-4 p-2 gap-2 mt-12 container mx-auto">
+                <BoxBkTextButton />
+                <BoxBkTextButton />
+                <BoxBkTextButton />
+                <BoxBkTextButton />
+              </div>
+            </section>
           </section>
         </div>
       </div>
