@@ -108,8 +108,8 @@ function App(props) {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
 
-              <div className="flex justify-center items-center grid grid-cols-5 h-80 container mx-auto">
-                <BoxesTogether name="House" />
+              <div className="flex justify-center items-center grid grid-cols-5 py-40 container mx-auto">
+                <BoxesTogether name="House"/> 
 
                 <BoxesTogether name="Apartment" />
                 <BoxesTogether name="Office" />
