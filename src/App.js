@@ -87,13 +87,13 @@ function App(props) {
               <ImageText />
             </div>
 
-            <section className="bg-gray-300 w-screen h-120">
-              <h3 className="text-center font-bold py-4">why choose us</h3>
-              <p className="text-center ">
+            <section className="bg-gray-300 w-screen py-10">
+              <h3 className="text-center font-bold">why choose us</h3>
+              <p className="text-center">
                 We provide full service at every step
               </p>
 
-              <div className="grid grid-cols-4 p-2 gap-2 container mx-auto">
+              <div className="grid grid-cols-4 p-2 gap-2 container mx-auto mt-8">
                 <ImageText />
                 <ImageText />
                 <ImageText />
@@ -153,7 +153,7 @@ function App(props) {
                 <ImageText />
               </div>
             </section>
-            <section className="bg-gray-300 w-screen h-96">
+            <section className="bg-gray-300 w-screen h-100 mt-6">
               <h3 className=" text-center font-bold py-4">Our Testimonials</h3>
               <p className="text-center">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
