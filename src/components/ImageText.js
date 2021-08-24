@@ -14,7 +14,7 @@ function ImageText() {
       <p className="inline-block ml-3">1 Garage</p>
       <p className="inline-block ml-2">1200 sq ft</p>
       <p className="line-through ml-2">$ 2,800</p>
-      <p className="font-bold">$ 7500 / mo</p>
+      <p className="font-bold">$ 7500 /mo</p>
     </div>
   );
 }
