@@ -14,7 +14,7 @@ function BoxBkTextButton() {
       </p>
       <p className="mt-4 text-center font-bold">Neighborhoods of 2020.</p>
       <p className="text-gray-500 mt-4 mb-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elite.
       </p>
       <a className="text-blue-700 font-bold" href="#">
         READ MORE
