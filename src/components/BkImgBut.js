@@ -7,7 +7,7 @@ function BkImgBut() {
         TRENDS
       </p>
       <p className="text-white transform translate-y-60 translate-x-30 text-5xl text-center mt-8">
-        Vermont Farmhouse with antiqu jail is the week's most popular home
+        Vermont Farmhouse with antiqu jail is the week's most popular home.
       </p>
       <button className="bg-blue-800 px-4 py-2 rounded-lg text-white transform translate-y-80 translate-x-60">
         READ MORE
