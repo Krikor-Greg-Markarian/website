@@ -6,7 +6,7 @@ function BoxesWithText() {
         <div className={"villa"}></div>
         <p className="font-bold mt-2 text-center">Trusted By Thousands</p>
         <p className="mt-2 text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elitee.
         </p>
       </div>
     );
