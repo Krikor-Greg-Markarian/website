@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/Header";
 import InputDesButton from "./components/InputDesButton";
 import ImageText from "./components/ImageText";
 import BoxesWithText from "./components/BoxesWithText";
@@ -9,6 +8,8 @@ import BkImgBut from "./components/BkImgBut";
 import ImageWBoxName from "./components/ImageWBoxName";
 import BoxBkTextButton from "./components/BoxBkTextButton";
 import Footer from "./components/Footer";
+import IconsTextDes from "./components/IconsTextDes";
+import BoxTextRI from "./components/BoxTextRI";
 
 function App(props) {
   return (
@@ -72,6 +73,7 @@ function App(props) {
           </li>
 
           <InputDesButton />
+
           <section className="mt-20 container mx-auto">
             <h3 className="text-center font-bold">
               Discover Our Featured Listings
@@ -87,19 +89,20 @@ function App(props) {
               <ImageText />
             </div>
 
-            <section className="bg-gray-300 w-screen py-10">
-              <h3 className="text-center font-bold">why choose us</h3>
-              <p className="text-center">
+            <section className="bg-gray-300 w-screen h-100 py-20">
+              <h3 className="text-center font-bold py-2">why choose us</h3>
+              <p className="text-center mt-2">
                 We provide full service at every step
               </p>
 
               <div className="grid grid-cols-4 p-2 gap-2 container mx-auto mt-8">
-                <ImageText />
-                <ImageText />
-                <ImageText />
-                <ImageText />
+                <IconsTextDes />
+                <IconsTextDes />
+                <IconsTextDes />
+                <IconsTextDes />
               </div>
             </section>
+
             <section className="bg-white">
               <p className="font-bold text-center mt-4">
                 Explore Our Properties
@@ -109,7 +112,7 @@ function App(props) {
               </p>
 
               <div className="flex justify-center items-center grid grid-cols-5 py-40 container mx-auto">
-                <BoxesTogether name="House"/> 
+                <BoxesTogether name="House" />
 
                 <BoxesTogether name="Apartment" />
                 <BoxesTogether name="Office" />
@@ -153,17 +156,33 @@ function App(props) {
                 <ImageText />
               </div>
             </section>
-            <section className="bg-gray-300 w-screen h-100 mt-6">
-              <h3 className=" text-center font-bold py-4">Our Testimonials</h3>
-              <p className="text-center">
+            <section className="bg-gray-300 w-screen h-100 py-32 mt-6">
+              <h3 className=" text-center font-bold ">Our Testimonials</h3>
+              <p className="text-center mt-2">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
 
-              <div className="grid grid-cols-4 p-2 gap-2 mt-8 container mx-auto">
-                <BoxesWithText />
-                <BoxesWithText />
-                <BoxesWithText />
-                <BoxesWithText />
+              <div className="grid grid-cols-4 p-2 gap-2 mt-20 container mx-auto">
+                <BoxTextRI />
+                <BoxTextRI />
+                <BoxTextRI />
+                <BoxTextRI />
+                <div className="mt-12 font-bold">
+                  Marvin McKinney
+                  <div className="">Designer</div>
+                </div>
+                <div className="mt-12 font-bold">
+                  Marvin McKinney
+                  <div className="">Designer</div>
+                </div>
+                <div className="mt-12 font-bold">
+                  Marvin McKinney
+                  <div className="">Designer</div>
+                </div>
+                <div className="mt-12 font-bold">
+                  Marvin McKinney
+                  <div className="">Designer</div>
+                </div>
               </div>
             </section>
             <div className="bg-white h-screen w-screen text-center mt-20">

@@ -37,7 +37,7 @@ function InputDesButton() {
           </div>
           <div></div>
 
-          <button className="bg-blue-700 text-white">SEARCH</button>
+          <button className="bg-blue-700 text-white hover:bg-red-500">SEARCH</button>
         </div>
       
     );
