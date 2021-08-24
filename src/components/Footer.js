@@ -13,7 +13,7 @@ function Footer() {
       <div className="grid grid-cols-4">
         <div className="bg-blue-900 h-96 list-none p-2">
           <li className="font-bold ">Contact us</li>
-          <li className="mt-5">329 queeberry strret </li>
+          <li className="mt-5">329 queeberry street </li>
           <li className="mt-3">123 456 789 </li>
           <li className="mt-3">support@hotmail.com </li>
         </div>
