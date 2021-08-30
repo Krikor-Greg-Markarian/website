@@ -7,9 +7,10 @@ import BoxesTogether from "./components/BoxesTogether";
 import BkImgBut from "./components/BkImgBut";
 import ImageWBoxName from "./components/ImageWBoxName";
 import BoxBkTextButton from "./components/BoxBkTextButton";
-import Footer from "./components/Footer";
 import IconsTextDes from "./components/IconsTextDes";
 import BoxTextRI from "./components/BoxTextRI";
+import Test from "./components/Test";
+import Footer from "./components/Footer";
 
 function App(props) {
   return (
@@ -173,15 +174,15 @@ function App(props) {
                 </div>
                 <div className="mt-12 font-bold">
                   Marvin McKinney
-                  <div className="">Designer</div>
+                  <div className="">Marketing Manager</div>
                 </div>
                 <div className="mt-12 font-bold">
                   Marvin McKinney
-                  <div className="">Designer</div>
+                  <div className="">CEO</div>
                 </div>
                 <div className="mt-12 font-bold">
                   Marvin McKinney
-                  <div className="">Designer</div>
+                  <div className="">Teacher</div>
                 </div>
               </div>
             </section>
@@ -193,26 +194,26 @@ function App(props) {
 
               <div className="grid grid-cols-4 gap-3 mt-36">
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
-                  1
+                  Los Angeles
                 </div>
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
-                  2
+                  New York
                 </div>
                 <div className="w-60 h-60 bg-blue-600 flex justify-center items-center row-span-2 mt-3">
-                  3
+                  Florida
                 </div>
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center ml-24">
-                  4
+                  Miami
                 </div>
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
-                  5
+                  London
                 </div>
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
-                  6
+                  Paris
                 </div>
 
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center ml-24">
-                  7
+                  Istanbul
                 </div>
               </div>
             </div>
@@ -223,7 +224,7 @@ function App(props) {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
 
-              <div className=" border-gray-200 grid grid-cols-5 px-2 py-4 gap-3 mt-10 container mx-auto">
+              <div className=" border-gray-200 grid grid-cols-5 px-1 py-4 gap-3 mt-10 container mx-auto">
                 <ImageWBoxName name="Robert Fox" position="Lead Designer" />
                 <ImageWBoxName name="Floyd CEO" position="Director" />
                 <ImageWBoxName name="Albert Flores" position="Marketer" />

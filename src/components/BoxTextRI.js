@@ -1,11 +1,9 @@
 import React from "react";
 
-function BoxTextRI() {
+function BoxTextRI(props) {
   return (
     <div className="bg-white p-2 relative">
-      <p className="mt-2 text-center">
-        "I belive in lifelong learning and skola is a great plce to learn from
-        experts. i've learned a lot and recommended it to all my friends."
+      <p className="mt-2 text-center">{props.description2}
       </p>
       <div>
         <img
