@@ -12,6 +12,167 @@ import BoxTextRI from "./components/BoxTextRI";
 import Test from "./components/Test";
 import Footer from "./components/Footer";
 
+const obj = {
+  data: [
+    {
+      title: "New",
+      subtitle3: "Quincy St. Brooklyn NY, USA.",
+      beds: "6 beds",
+      baths: "5 baths",
+      garage: "1 garage",
+      meter: "1200 sq",
+      oldprice: "$2800",
+      newprice: "$ 7500 /mo",
+    },
+    {
+      title: " Apartment",
+      subtitle3: "Quincy St. Brooklyn NY, USA.",
+      beds: "6 beds",
+      baths: "5 baths",
+      garage: "1 garage",
+      meter: "1200 sq",
+      oldprice: "$2800",
+      newprice: "$ 7500 /mo",
+    },
+    {
+      title: "Nice",
+      subtitle3: "Quincy St. Brooklyn NY, USA.",
+      beds: "6 beds",
+      baths: "5 baths",
+      garage: "1 garage",
+      meter: "1200 sq",
+      oldprice: "$2800",
+      newprice: "$ 7500 /mo",
+    },
+    {
+      title: "View",
+      subtitle3: "Quincy St. Brooklyn NY, USA.",
+      beds: "6 beds",
+      baths: "5 baths",
+      garage: "1 garage",
+      meter: "1200 sq",
+      oldprice: "$2800",
+      newprice: "$ 7500 /mo",
+    },
+  ],
+};
+
+const object = {
+  data: [
+    {
+      title: "Trusted By Thousands",
+      description: "Lorem ipsum dolor, sit amet consecteur adipiscing elite.",
+    },
+    {
+      title: "Trusted By Thousands",
+      description: "Lorem ipsum dolor, sit amet consecteur adipiscing elite.",
+    },
+    {
+      title: "Trusted By Thousands",
+      description: "Lorem ipsum dolor, sit amet consecteur adipiscing elite.",
+    },
+    {
+      title: "Trusted By Thousands",
+      description: "Lorem ipsum dolor, sit amet consecteur adipiscing elite.",
+    },
+  ],
+};
+
+const object2 = {
+  data: [
+    {
+      name: "House",
+    },
+    {
+      name: "Apartment",
+    },
+    {
+      name: "Office",
+    },
+    {
+      name: "Villa",
+    },
+    {
+      name: "Guitar",
+    },
+  ],
+};
+
+const object3 = {
+  data: [
+    {
+      description2:
+        "I belive in lifelong learning and skola is a great place to learn from experts. i've learned a lot and recommended it to all my friends.",
+    },
+    {
+      description2:
+        "I belive in lifelong learning and skola is a great place to learn from experts. i've learned a lot and recommended it to all my friends.",
+    },
+    {
+      description2:
+        "I belive in lifelong learning and skola is a great place to learn from experts. i've learned a lot and recommended it to all my friends.",
+    },
+    {
+      description2:
+        "I belive in lifelong learning and skola is a great place to learn from experts. i've learned a lot and recommended it to all my friends.",
+    },
+  ],
+};
+
+const object4 = {
+  data: [
+    {
+      name3: "Robert Fox",
+      newposition: "Lead Designer",
+    },
+    {
+      name3: "Floyd CEO",
+      newposition: "Director",
+    },
+    {
+      name3: "Albert Flores",
+      newposition: "Marketer",
+    },
+    {
+      name3: "Darlene Robertson",
+      newposition: "Project Manager",
+    },
+    {
+      name3: "Savanash Nguyen",
+      newposition: "Leader Developer",
+    },
+  ],
+};
+
+const object5 = {
+  data: [
+    {
+      maintitle: "Redefine Ranks The Most Competetive",
+      subtitle: "Neighborhoods of 2020",
+      greytext: "Lorem Ipsum dodlor sit amet consectetur adipiscing elite.",
+      readmore: "Read More",
+    },
+    {
+      maintitle: "Redefine Ranks The Most Competetive",
+      subtitle: "Neighborhoods of 2020",
+      greytext: "Lorem Ipsum dodlor sit amet consectetur adipiscing elite.",
+      readmore: "Read More",
+    },
+    {
+      maintitle: "Redefine Ranks The Most Competetive",
+      subtitle: "Neighborhoods of 2020",
+      greytext: "Lorem Ipsum dodlor sit amet consectetur adipiscing elite.",
+      readmore: "Read More",
+    },
+    {
+      maintitle: "Redefine Ranks The Most Competetive",
+      subtitle: "Neighborhoods of 2020",
+      greytext: "Lorem Ipsum dodlor sit amet consectetur adipiscing elite.",
+      readmore: "Read More",
+    },
+  ],
+};
+
 function App(props) {
   return (
     <div>
@@ -84,10 +245,19 @@ function App(props) {
             </p>
 
             <div className=" border-gray-200 grid grid-cols-4 px-2 py-4 gap-3 mt-10">
-              <ImageText />
-              <ImageText />
-              <ImageText />
-              <ImageText />
+              {obj.data.map((item, idx) => (
+                <ImageText
+                  key={idx}
+                  beds={item.beds}
+                  baths={item.baths}
+                  garage={item.garage}
+                  meter={item.meter}
+                  oldprice={item.oldprice}
+                  newprice={item.newprice}
+                  title3={item.title3}
+                  subtitle3={item.subtitle3}
+                />
+              ))}
             </div>
 
             <section className="bg-gray-300 w-screen h-100 py-20">
@@ -97,10 +267,13 @@ function App(props) {
               </p>
 
               <div className="grid grid-cols-4 p-2 gap-2 container mx-auto mt-8">
-                <IconsTextDes />
-                <IconsTextDes />
-                <IconsTextDes />
-                <IconsTextDes />
+                {object.data.map((item, idx) => (
+                  <IconsTextDes
+                    key={idx}
+                    title={item.title}
+                    description={item.description}
+                  />
+                ))}
               </div>
             </section>
 
@@ -113,12 +286,9 @@ function App(props) {
               </p>
 
               <div className="flex justify-center items-center grid grid-cols-5 py-40 container mx-auto">
-                <BoxesTogether name="House" />
-
-                <BoxesTogether name="Apartment" />
-                <BoxesTogether name="Office" />
-                <BoxesTogether name="Villa" />
-                <BoxesTogether name="Guitar" />
+                {object2.data.map((item, idx) => (
+                  <BoxesTogether key={idx} name={item.name} />
+                ))}
               </div>
             </section>
             <section>
@@ -142,6 +312,7 @@ function App(props) {
                 </div>
               </div>
             </section>
+
             <section className="mt-20">
               <h3 className="text-center font-bold">
                 Recent Properties For Rent
@@ -151,12 +322,22 @@ function App(props) {
               </p>
 
               <div className=" border-gray-200 grid grid-cols-4 px-2 py-4 gap-3 mt-10 container mx-auto">
-                <ImageText />
-                <ImageText />
-                <ImageText />
-                <ImageText />
+                {obj.data.map((item, idx) => (
+                  <ImageText
+                    key={idx}
+                    beds={item.beds}
+                    baths={item.baths}
+                    garage={item.garage}
+                    meter={item.meter}
+                    oldprice={item.oldprice}
+                    newprice={item.newprice}
+                    title3={item.title}
+                    subtitle3={item.subtitle3}
+                  />
+                ))}
               </div>
             </section>
+
             <section className="bg-gray-300 w-screen h-100 py-32 mt-6">
               <h3 className=" text-center font-bold ">Our Testimonials</h3>
               <p className="text-center mt-2">
@@ -164,10 +345,10 @@ function App(props) {
               </p>
 
               <div className="grid grid-cols-4 p-2 gap-2 mt-20 container mx-auto">
-                <BoxTextRI />
-                <BoxTextRI />
-                <BoxTextRI />
-                <BoxTextRI />
+                {object3.data.map((item, idx) => (
+                  <BoxTextRI key={idx} description2={item.description2} />
+                ))}
+
                 <div className="mt-12 font-bold">
                   Marvin McKinney
                   <div className="">Designer</div>
@@ -186,6 +367,7 @@ function App(props) {
                 </div>
               </div>
             </section>
+
             <div className="bg-white h-screen w-screen text-center mt-20">
               <p className="font-bold ">Explore Cities</p>
               <p className="mt-10">
@@ -196,18 +378,23 @@ function App(props) {
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
                   Los Angeles
                 </div>
+
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
                   New York
                 </div>
+
                 <div className="w-60 h-60 bg-blue-600 flex justify-center items-center row-span-2 mt-3">
                   Florida
                 </div>
+
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center ml-24">
                   Miami
                 </div>
+
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
                   London
                 </div>
+
                 <div className="w-32 h-32 bg-blue-600 flex justify-center items-center">
                   Paris
                 </div>
@@ -221,21 +408,18 @@ function App(props) {
             <section className="mt-20">
               <h3 className="text-center font-bold">Meet Our Agents</h3>
               <p className="text-center">
+                {props.title2}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
 
               <div className=" border-gray-200 grid grid-cols-5 px-1 py-4 gap-3 mt-10 container mx-auto">
-                <ImageWBoxName name="Robert Fox" position="Lead Designer" />
-                <ImageWBoxName name="Floyd CEO" position="Director" />
-                <ImageWBoxName name="Albert Flores" position="Marketer" />
-                <ImageWBoxName
-                  name="Darlene Robertson"
-                  position="Project Manager"
-                />
-                <ImageWBoxName
-                  name="Savanash Nguyen"
-                  position="Leader Developer"
-                />
+                {object4.data.map((item, idx) => (
+                  <ImageWBoxName
+                    key={idx}
+                    name3={item.name3}
+                    newposition={item.newposition}
+                  />
+                ))}
               </div>
             </section>
 
@@ -246,10 +430,14 @@ function App(props) {
               </p>
 
               <div className="grid grid-cols-4 p-2 gap-2 mt-12 container mx-auto">
-                <BoxBkTextButton />
-                <BoxBkTextButton />
-                <BoxBkTextButton />
-                <BoxBkTextButton />
+                {object5.data.map((item, idx) => (
+                  <BoxBkTextButton
+                    maintitle={item.maintitle}
+                    subtitle={item.subtitle}
+                    greytext={item.greytext}
+                    readmore={item.readmore}
+                  />
+                ))}
               </div>
             </section>
           </section>
