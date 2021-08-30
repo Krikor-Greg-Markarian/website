@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 const obj = {
   data: [
     {
-      title: "New",
+      title3: "New",
       subtitle3: "Quincy St. Brooklyn NY, USA.",
       beds: "6 beds",
       baths: "5 baths",
@@ -25,7 +25,7 @@ const obj = {
       newprice: "$ 7500 /mo",
     },
     {
-      title: " Apartment",
+      title3: " Apartment",
       subtitle3: "Quincy St. Brooklyn NY, USA.",
       beds: "6 beds",
       baths: "5 baths",
@@ -35,7 +35,7 @@ const obj = {
       newprice: "$ 7500 /mo",
     },
     {
-      title: "Nice",
+      title3: "Nice",
       subtitle3: "Quincy St. Brooklyn NY, USA.",
       beds: "6 beds",
       baths: "5 baths",
@@ -45,7 +45,7 @@ const obj = {
       newprice: "$ 7500 /mo",
     },
     {
-      title: "View",
+      title3: "View",
       subtitle3: "Quincy St. Brooklyn NY, USA.",
       beds: "6 beds",
       baths: "5 baths",
@@ -331,7 +331,7 @@ function App(props) {
                     meter={item.meter}
                     oldprice={item.oldprice}
                     newprice={item.newprice}
-                    title3={item.title}
+                    title3={item.title3}
                     subtitle3={item.subtitle3}
                   />
                 ))}
