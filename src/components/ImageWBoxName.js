@@ -6,8 +6,8 @@ function ImageWBoxName(props) {
         <div className={"nature"}></div>
 
         <div className="border-3 text-center rounded-lg -mt-6 bg-white border-2 border-gray-200">
-          <p className="">{props.name}</p>
-          <p className="">{props.position}</p>
+          <p className="">{props.name3}</p>
+          <p className="">{props.newposition}</p>
         </div>
       </div>
     );
