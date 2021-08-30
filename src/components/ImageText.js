@@ -8,7 +8,7 @@ function ImageText(props) {
         alt="villa"
       /> */}
       <div className={"backgroundappartment"}></div>
-      <div className=" p-2 font-bold">{props.title3}New Apartment Nice View</div>
+      <div className=" p-2 font-bold">{props.title3}New Apartment, Nice View</div>
       <p className=" p-2 border-3 border-b">{props.subtitle3}Quincy St. Brooklyn NY, USA.</p>
       <p className="inline-block">{props.beds}</p>
       <p className="inline-block ml-3">{props.baths}</p>
